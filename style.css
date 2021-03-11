@@ -1,0 +1,50 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.me{
+   background-image: url("bg.png");
+   -webkit-filter: blur(4px);
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.all{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+.contaner{
+   position: relative;
+   display: flex;
+}
+#canvas{
+   display: block;
+   margin: 0 auto;
+   border: white .2vh solid;
+   box-shadow: 0 0 4vh black;
+   width: 50vh;
+   height: 90vh;
+}
+#canvas2{
+   display: block;
+   margin: 0 auto;
+   width: 17vh;
+   height: 15vh;
+   padding-left: 2vh;
+}
+#tuchScrin{
+   position: fixed;
+   width: 100vh;
+   height: 100vh;
+   background: #ff000000;
+   z-index: 3;
+}
