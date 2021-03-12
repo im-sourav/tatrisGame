@@ -5,17 +5,17 @@
 }
 
 .me{
-   background-image: url("bg.png");
+   background-image: url(bg.png);
+   filter: blur(4PX);
    -webkit-filter: blur(4px);
    position: absolute;
-   height: 100%;
    width: 100%;
-   z-index: -1;
+   height: 100%;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
+   z-index: -1;
 }
-
 .all{
    display: flex;
    justify-content: center;
@@ -35,16 +35,87 @@
    height: 72vh;
 }
 #canvas2{
-   display: block;
-   margin: 0 auto;
+   margin: 0 auto;   
    width: 13vh;
    height: 11vh;
    padding-left: 2vh;
+   border: white .2vh solid;
+
 }
 #tuchScrin{
    position: fixed;
-   width: 100vh;
-   height: 100vh;
-   background: #ff000000;
+   width: 33.3vw;
+   height: 100vh; 
+   background: #ff00006b;
    z-index: 3;
 }
+#tuchScrin2{
+   position: fixed;
+   left: 33.3vw;
+   width: 33.3vw;
+   height: 100vh;
+   background: #0beb297a;
+   z-index: 3;
+}
+
+#tuchScrin3{
+   position: fixed;
+   left: 66.6vw;
+   width: 33.3vw;
+   height: 100vh;
+   background: #ebe70b73;
+   z-index: 3;
+}
+.textButton{
+   position: absolute;
+}
+.name{
+   position: absolute;
+   font-family: serif; 
+   color: #00000000;
+   bottom: 0;
+   margin: 2vh;
+   font-size: 2vh;
+   -webkit-text-stroke-width: .5px;
+   -webkit-text-stroke-color: black;
+}
+.next{
+   position: absolute;
+   display: flex;
+   width: 20vh;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top: -3vh;
+   color: aqua;
+   text-shadow: 0 0 .2vh #000;
+   
+}
+.SCORE{
+   position: absolute;
+   width: 20vh;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top: 7vh;
+   text-shadow: 0 0 .2vh #000;
+   left: 25vh;
+   color: #fff;
+
+}
+#Button{
+   position: absolute;
+   left: 40%;
+   top: 43%;
+   z-index: -5;
+   font-size: 5vh;
+   background: #03015e;
+   padding: 1vh 2vh ;
+   border-radius: 1vh;
+   text-shadow: 0 0 .4vh black;
+   box-shadow: 0 0 3vh #010135;
+   color: #01ff2bfa;
+   font-family: 'Times New Roman', Times, serif;
+}
+/* @media screen and (min-width: 360px) {
+   #Button{
+      z-index: 5;
+      background: #2b00fff1;
+   }
+} */
